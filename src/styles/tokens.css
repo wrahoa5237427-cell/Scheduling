@@ -1,0 +1,55 @@
+/*
+  Design tokens.
+  Concept: bàn học yên tĩnh — nền xám-xanh rất nhạt, mực than, một sắc xanh lá dịu làm điểm nhấn.
+  Chỉ một accent (xanh lá) cho hành động chính / trạng thái chọn. Màu "warn" chỉ dùng cho quá hạn
+  và vượt giới hạn coding, luôn đi kèm icon + chữ.
+  Font: Be Vietnam Pro (sans-serif, hỗ trợ đầy đủ dấu tiếng Việt). Không dùng font có chân.
+*/
+:root {
+  --bg: #f4f5f2;
+  --surface: #fbfbf9;
+  --ink: #1d2320;
+  --ink-2: #424b46;
+  --ink-3: #5f6964; /* >= 4.5:1 trên --bg */
+  --line: #dadcd6;
+  --line-strong: #bfc5bc;
+
+  --accent: #2f6b55;
+  --accent-hover: #265946;
+  --accent-ink: #1f4f3e;
+  --accent-soft: #e0ebe4;
+
+  --warn: #9a4a1f;
+  --warn-soft: #f3e4d9;
+
+  /* Spacing */
+  --s1: 4px;
+  --s2: 8px;
+  --s3: 12px;
+  --s4: 16px;
+  --s5: 24px;
+  --s6: 32px;
+  --s7: 48px;
+
+  /* Radius: tối đa 3 giá trị */
+  --r-s: 4px;
+  --r-m: 6px;
+  --r-l: 10px;
+
+  /* Type scale */
+  --t-xs: 0.8125rem; /* 13 */
+  --t-s: 0.875rem; /* 14 */
+  --t-base: 1rem; /* 16 */
+  --t-l: 1.1875rem; /* 19 */
+  --t-xl: 1.5rem; /* 24 */
+  --t-2xl: 2rem; /* 32 */
+
+  --font: 'Be Vietnam Pro', 'Helvetica Neue', Arial, sans-serif;
+  --control-h: 40px;
+}
+
+@media (pointer: coarse) {
+  :root {
+    --control-h: 44px;
+  }
+}
